@@ -32,7 +32,7 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
@@ -295,4 +295,40 @@ code {
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+.neo-theme {
+  --neo-main: oklch(67.47% 0.1725 259.61);
+  --neo-secondary: oklch(100% 0 0);
+  --neo-foreground: oklch(0% 0 0);
+  --neo-main-foreground: oklch(0% 0 0);
+  --neo-border: oklch(0% 0 0);
+  --neo-ring: oklch(0% 0 0);
+  --neo-radius: 5px;
+  --neo-shadow-x: 4px;
+  --neo-shadow-y: 4px;
+  --neo-shadow: var(--neo-shadow-x) var(--neo-shadow-y) 0 0 var(--neo-border);
+  --neo-base-font-weight: 500;
+}
+
+@media (prefers-color-scheme: light) {
+  .neo-theme {
+    --neo-secondary: oklch(23.93% 0 0);
+    --neo-foreground: oklch(92.49% 0 0);
+    --neo-ring: oklch(100% 0 0);
+  }
+}
+
+@theme inline {
+  --color-neo-main: var(--neo-main);
+  --color-neo-secondary: var(--neo-secondary);
+  --color-neo-foreground: var(--neo-foreground);
+  --color-neo-main-foreground: var(--neo-main-foreground);
+  --color-neo-border: var(--neo-border);
+  --color-neo-ring: var(--neo-ring);
+  --radius-neo: var(--neo-radius);
+  --shadow-neo: var(--neo-shadow);
+  --spacing-neo-shadow-x: var(--neo-shadow-x);
+  --spacing-neo-shadow-y: var(--neo-shadow-y);
+  --font-weight-neo-base: var(--neo-base-font-weight);
 }

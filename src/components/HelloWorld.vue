@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import viteLogo from '../assets/vite.svg'
 import heroImg from '../assets/hero.png'
 import vueLogo from '../assets/vue.svg'
+import Button from './ui/button/Button.vue'
 
 const count = ref(0)
 </script>
@@ -53,6 +54,7 @@ const count = ref(0)
       </svg>
       <h2>Connect with us</h2>
       <p>Join the Vite community</p>
+      <Button variant="default">Hello</Button>
       <ul>
         <li>
           <a href="https://github.com/vitejs/vite" target="_blank">
